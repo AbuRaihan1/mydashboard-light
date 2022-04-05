@@ -48,7 +48,6 @@
   display: flex;
   justify-content: space-between;
   z-index: 5;
-  border-bottom: 1px solid #e1e3e7;
 }
 
 .search_bar {
@@ -553,6 +552,7 @@ label #close {
 
 input[type="range"] {
   width: 100px;
+  cursor: pointer;
 }
 
 input[type="range"] {
@@ -605,7 +605,7 @@ input[type="range"]:focus {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #21242F;
+  border-bottom: 1px solid #d6d7da;
 }
 
 .market_cap h5 {
@@ -718,6 +718,15 @@ input[type="range"]:focus {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.donut_desc::-webkit-scrollbar{
+  display: none;
+  transition: all .2s ease-in-out;
+}
+
+.donut_desc:hover::-webkit-scrollbar{
+  display: block;
+}
+
 .donut_desc h5 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -768,6 +777,16 @@ input[type="range"]:focus {
 .area_chart_for_flex {
   display: flex;
   overflow-x: auto;
+  height: 280px;
+  overflow-y: hidden;
+}
+
+.area_chart_for_flex::-webkit-scrollbar{
+  display:none;
+}
+
+.area_chart_for_flex:hover::-webkit-scrollbar{
+  display: block;
 }
 
 .letest_news_chart h5 {
