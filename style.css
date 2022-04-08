@@ -11,11 +11,11 @@
 
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #717171;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #717171;
 }
 
 ::-webkit-scrollbar {
@@ -476,11 +476,48 @@ label #close {
 
 .flexable_item {
   background: #ffffff;
-  margin-bottom: 20px;
-  display: flex;
   padding: 10px;
   border-radius: 15px;
+  height: 100px;
 }
+
+.bitcoin_and_market_chap_wrapper{
+  display: flex;
+  margin: 10px;
+  overflow-x:hidden;
+}
+
+.bitcoin_and_market_chap_wrapper:hover{
+  overflow-x: auto;
+}
+::-webkit-scrollbar {
+  height: 10px;
+}
+.flex_between_img_and_item{
+  display: flex;
+}
+
+.bitcoin_all{
+  background:white !important;
+  border-bottom: none !important;
+}
+
+.bit_heading{
+  display: flex;
+  position:relative;
+}
+
+.bit_heading h4{
+  font-family: 'roboto';
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+}
+
 
 .bitcoin {
   border: 1px solid #ffaa2b;
@@ -491,17 +528,12 @@ label #close {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 15px;
+  margin-left: 0px;
+  margin-top: -05px;
   
-}
+} 
 
-.bitcoin_info h5 {
-  display: inline;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 21px;
-}
+
 
 .bitcoin_info .btc {
   width: 34px;
@@ -513,41 +545,69 @@ label #close {
   display: inline;
   padding: 1px 10px;
   font-size: 12px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bitcoin_info i {
+.yellow_star {
   color: #ffaa2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E0E2EB;
+  padding: 2px;
+  border-radius: 3px;
+  margin-left: 50px;
+  position: absolute;
+  right: -20px;
+  top: -5px;
 }
 
-.bitcoin_info h3 {
+.bit_parsent_and_dollar{
+  display: flex;
+}
+
+.bit_parsent_and_dollar h3 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   color: #3ab67a;
-  display: inline;
-  padding-top: 6px;
+  display: inline !important;
+  /* padding-top: 6px; */
+  margin-left: 8px;
 }
 
-.parsent {
-  width: 62px;
-  height: 27px;
-  background: #d40000;
-  border: 1px solid #d40000;
-  box-sizing: border-box;
-  border-radius: 6px;
-  color: white;
-  margin-left: 6px;
-  padding: 0px 5px;
+.bit_parsent_and_dollar span{
+  background: #EA3943;
+  margin-left: 30px;
+  border-radius: 3px;
+  color: white !important;
+  padding: 0px 5px 0px 5px;
+  font-size: 14px !important;
+  height: 28px;
+}
+
+
+.carret_parsent {
+  display: inline;
+  border:none;
 }
 
 .parsent i {
   color: white !important;
+  display: inline;
 }
 
+
+
 input[type="range"] {
-  width: 100px;
+  width: 80px;
   cursor: pointer;
+  margin: 0px 10px;
+  background-color: none;
 }
 
 input[type="range"] {
@@ -578,6 +638,13 @@ input[type="range"]:focus {
 .low_high {
   display: flex;
   position: relative;
+  margin-left: 8px;
+}
+.low_high aside{
+  font-size: 14px;
+}
+.low_high aside span{
+  font-size: 14px !important;
 }
 
 .twenty_four {
@@ -586,13 +653,15 @@ input[type="range"]:focus {
   color: #6b6b6b;
   background: #e0e2eb;
   border-radius: 3px;
-  padding: 1px 10px;
+  padding: 1px 6px;
   font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5px;
+  right: -52px;
   margin-top: 2px;
+  font-size: 12px !important;
+  position: absolute;
 }
 
 .market_cap {
@@ -601,8 +670,17 @@ input[type="range"]:focus {
   padding: 20px;
   margin-bottom: 30px;
   border-bottom: 1px solid #d6d7da;
+  min-width: 300px;
+  margin: 10px;
+  height: 100px;
+  margin-top: 28px;
 }
 
+.market_cap:first-child{
+  height: 130px;
+  margin-top: 0px;
+  min-width:400px;
+}
 .market_cap h5 {
   color: #5160ac;
   font-weight: 600;
@@ -1009,3 +1087,17 @@ input[type="range"]:focus {
   color: white;
 
 }/* dashboard pagianton */
+
+
+.for_display_flex{
+  display: flex;
+  margin: 10px;
+  overflow-x: auto;
+}
+
+.for_display_flex div{
+  height: 50px;
+  min-width: 300px;
+  background: red;
+  margin: 10px;
+}
